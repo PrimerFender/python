@@ -1,3 +1,5 @@
+# This a simple test to compare version numbers (which are strings, but mathematically accurate)
+
 oldVersion = "11.2.2"
 newVersion = "11.3"
 
