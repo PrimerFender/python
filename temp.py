@@ -1,5 +1,16 @@
-args = ["script.py", "1", "2", "3", "4"]
-# the variable "args" is already defined
-my_list = [int(args[1]), int(args[2]), int(args[3]), int(args[4])]
+class Game:
+    def __init__(self):
+        self.game_state = "Eat"
 
-print(str(my_list))
+class Player(Game):
+    def __init__(self):
+        self.name = "Player1"
+
+class ComputerPlayer(Player):
+    def __init__(self):
+        self.difficulty = "Easy"
+
+new_game = Game()
+new_player = ComputerPlayer()
+print(new_player.difficulty)
+print(new_player.name)
